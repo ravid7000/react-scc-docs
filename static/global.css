@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #FF618E;
+  --header-bg: #1E212A;
+  --body-bg: #292D39;
+  --border: #404659;
+  --text: #ffffff;
+  --menu-item: #3E4456;
+  --menu-item-light: #4B5268;
+  --header-height: 57px;
+  --sidebar-width: 300px;
+  --spacing: 16px;
+  --spacing-sm: 8px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+  color: var(--text);
+  background: var(--body-bg);
+  padding-top: var(--header-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0 0.5em 0;
+	line-height: 1.2;
+}
+
+h1 {
+  font-weight: 700;
+	font-size: 4em;
+}
+
+h2 {
+  font-weight: 700;
+	font-size: 2em;
+}
+
+h3 {
+  margin-top: 1.5em;
+  font-weight: 400;
+	font-size: 1.5em;
+}
+
+a {
+	color: inherit;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+  background-color: var(--header-bg);
+  padding: 0.2em 0.3em;
+	border-radius: 2px;
+}
+
+pre > code {
+  display: block;
+	padding: var(--spacing);
+	border-radius: 4px;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+.primary {
+  color: var(--primary);
+}
