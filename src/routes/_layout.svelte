@@ -2,8 +2,6 @@
   import Nav from "../components/Nav.svelte";
 
   export let segment;
-
-  console.log({ segment });
 </script>
 
 <Nav {segment} />
